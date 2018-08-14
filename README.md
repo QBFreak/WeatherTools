@@ -25,7 +25,8 @@ Look up an ICAO location indicator in `stations.txt` as specified on the command
 *Usage:* `./geticao.sh <City> <ST>`
 
 *Example:*
-```$ ./geticao.sh Monroe NC
+```bash
+$ ./geticao.sh Monroe NC
 NC MONROE KEQY
 ```
 
@@ -38,7 +39,8 @@ Retrieve the weather for a given ICAO location indicator as specified on the com
 *Usage:* `./getweathericao.sh <ICAO>`
 
 *Example:*
-```$ ./getweathericao.sh KEQY
+```bash
+$ ./getweathericao.sh KEQY
 Routine Weather Report for MONROE, NC at 23:53 UTC: Current temp is 80.6 degrees and the dewpoint is 68.0 degrees. The barometer is 29.97in. Current visibility is 10 Statute Miles.
 ```
 
@@ -54,7 +56,8 @@ Retrieve the weather for a given City, State as specified on the command line.
 *Usage:* `./getweatherloc.sh <CITY> <ST>`
 
 *Example:*
-```$ ./getweatherloc.sh Monroe NC
+```bash
+$ ./getweatherloc.sh Monroe NC
 Routine Weather Report for MONROE, NC at 23:53 UTC: Current temp is 80.6 degrees and the dewpoint is 68.0 degrees. The barometer is 29.97in. Current visibility is 10 Statute Miles.
 ```
 
@@ -67,7 +70,8 @@ Translate a METAR weather report into plain English.
 *Usage:* `./metar2eng.pl <METAR>`
 
 *Example:*
-```$ ./metar2eng.pl KEQY 132353Z AUTO 00000KT 10SM CLR 27/20 A2997 RMK AO2 SLP147 T02670200 10306 20267 55001
+```bash
+$ ./metar2eng.pl KEQY 132353Z AUTO 00000KT 10SM CLR 27/20 A2997 RMK AO2 SLP147 T02670200 10306 20267 55001
 Routine Weather Report for KEQY at 23:53 UTC: Current temp is 80.6 degrees and the dewpoint is 68.0 degrees. The barometer is 29.97in. Current visibility is 10 Statute Miles.
 ```
 
