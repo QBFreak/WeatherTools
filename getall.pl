@@ -7,6 +7,7 @@ use File::Slurp;
 use Geo::METAR;
 use POSIX qw(strftime);
 use GD::Graph::linespoints;
+use GD::Graph::colour;
 
 my $baseurl = "http://tgftp.nws.noaa.gov/data/observations/metar/cycles";
 my $icao = "KEQY";
@@ -88,6 +89,8 @@ $my_graph->set(
 	y_label => 'Inches',
 	y_min_value => ($minobs - $pad),
 	y_max_value => ($maxobs + $pad),
+	transparent => 0,
+	bgclr => "dgray",
 );
 $my_graph->set_legend( 'Barometric Pressure' );
 my $gd = $my_graph->plot(\@data);
