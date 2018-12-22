@@ -51,7 +51,7 @@ print("\n");
 my %observations;
 foreach my $name (sort { $files{$a} <=> $files{$b} } keys %files) {
 	my $contents = read_file($name);
-	my @matches = ($contents =~ /(?:^|\n)(KEQY [^\n]+)/g);
+	my @matches = ($contents =~ /(?:^|\n)($ICAO [^\n]+)/g);
 	foreach my $match (@matches) {
 		my $m = new Geo::METAR;
 		$m->metar($match);
